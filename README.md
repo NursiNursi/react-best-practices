@@ -14,3 +14,7 @@ There are no strict rules about folder structure, so don't worry too much about 
 ## 3. Components: when to create them
 
 Don't be afraid to create components as a best practice try to identify opportunities for reuse as well as when some element in the UI is distinct from something else.
+
+## 4. Avoid unnecessary markup (div's)
+
+Adding unnecessary div elements can clutter the HTML structure, potentially breaking the layout. Layout styling with Flexbox or CSS Grid depends on the HTML structure, so inserting a div may cause layout issues. Instead, consider using the React Fragment, which preserves the layout by not adding extra elements to the HTML.
