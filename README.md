@@ -10,3 +10,7 @@ It's a better practice to define the hardcoded values somewhere else to easier t
 ## 2. Folder Structure
 
 There are no strict rules about folder structure, so don't worry too much about it. However, as a best practice, ensure it's easy for a new person to understand. Consistency is key, organize things by their semantic purpose. For example, components should be distinct from state management, and state management should be separate from constants and types. By keeping these elements distinct and organizing them differently, you can create a more intuitive structure.
+
+## 3. Components: when to create them
+
+Don't be afraid to create components as a best practice try to identify opportunities for reuse as well as when some element in the UI is distinct from something else.
