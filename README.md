@@ -26,3 +26,7 @@ As a best practice try not adding layout styles to your reusable component, inst
 ## 6. Use TypeScript
 
 TypeScript makes you code a little bit more strict, helping you catch mistakes more quickly and providing IntelliSense. It warns you when you've made an error and offers useful IntelliSense information to assist you when you're unsure about something.
+
+## 7. Keep components simple (children pattern, updater function for useState)
+
+Ensure your components, especially those lower in the component tree or those intended for reuse, remain simple and uncomplicated. Keeping them 'dumb' improves their reusability. If you have some kind of calculation typically you want to derive it just very close to where you actually have the original state instead of somewhere down in your component tree. And then you can just pass that as a prop.
