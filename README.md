@@ -22,3 +22,7 @@ Adding unnecessary div elements can clutter the HTML structure, potentially brea
 ## 5. Don't add layout styles to reusable component
 
 As a best practice try not adding layout styles to your reusable component, instead if you need some kind of layout style just use one of a div or use the className prop.
+
+## 6. Use TypeScript
+
+TypeScript makes you code a little bit more strict, helping you catch mistakes more quickly and providing IntelliSense. It warns you when you've made an error and offers useful IntelliSense information to assist you when you're unsure about something.
