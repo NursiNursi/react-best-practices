@@ -30,3 +30,8 @@ TypeScript makes you code a little bit more strict, helping you catch mistakes m
 ## 7. Keep components simple (children pattern, updater function for useState)
 
 Ensure your components, especially those lower in the component tree or those intended for reuse, remain simple and uncomplicated. Keeping them 'dumb' improves their reusability. If you have some kind of calculation typically you want to derive it just very close to where you actually have the original state instead of somewhere down in your component tree. And then you can just pass that as a prop.
+
+## 8. Don't use setter function from useState, instead create a separate event handler function
+
+Often, you'll want to perform multiple actions when an event occurs. Instead of passing raw setter functions, it's typically better to create a handler function that encompasses all the necessary actions for the event. This approach allows you to manage everything within a single, organized function. For example: handleAdd(), handleEdit() and handleDelete().
+
