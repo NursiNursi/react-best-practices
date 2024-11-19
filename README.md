@@ -35,3 +35,6 @@ Ensure your components, especially those lower in the component tree or those in
 
 Often, you'll want to perform multiple actions when an event occurs. Instead of passing raw setter functions, it's typically better to create a handler function that encompasses all the necessary actions for the event. This approach allows you to manage everything within a single, organized function. For example: handleAdd(), handleEdit() and handleDelete().
 
+## 9. Naming props (when prop is a function)
+
+If they're meant to be reusable like a button component don't make them very specific to one use case, try to make it more general and simpler. And you can do that by exposing certain props so when you actually use that component you can specify the particular use case. In terms of naming the props you can think about it as sort of like emitting an event. For example: onAdd(), onEdit(), onDelete().
